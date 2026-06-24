@@ -1,7 +1,7 @@
 name: Update
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/30 * * * *'  # تغییر به هر ۳۰ دقیقه (پایداری بسیار بالاتر)
   workflow_dispatch:
 
 permissions:
@@ -16,9 +16,17 @@ jobs:
         with: {python-version: '3.9'}
       - run: pip install requests
       - run: python scraper.py
+      
       - name: Commit and push
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add sub*.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update 20 sub files" && git push)
+          
+          # بررسی تغییرات - اگر تغییری نبود، اسکریپت با موفقیت تمام می‌شود
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No new configs found, skipping."
+          else
+            git commit -m "Update sub files - $(date '+%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
