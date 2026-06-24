@@ -6,15 +6,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    runs-on: ubuntu-latest
     env:
-      NODE_OPTIONS: --no-deprecation # این خط هشدارها را ساکت می‌کند
+      NODE_OPTIONS: --no-deprecation
     permissions: {contents: write}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4  # تغییر از v3 به v4
-        
-      - name: Set up Python
-        uses: actions/setup-python@v5  # تغییر از v4 به v5
-        with:
-          python-version: '3.9'
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.9'}
+      - run: pip install requests
+      - run: python scraper.py
+      - run: |
+          git config --global user.name 'bot'
+          git config --global user.email 'bot@bot.com'
+          git add subscription.txt
+          git commit -m "update" || exit 0
+          git push
