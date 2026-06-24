@@ -8,14 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions: {contents: write}
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with: {python-version: '3.9'}
-      - run: pip install requests
-      - run: python scraper.py
-      - run: |
-          git config --global user.name 'bot'
-          git config --global user.email 'bot@bot.com'
-          git add subscription.txt
-          git commit -m "update" || exit 0
-          git push
+      - name: Checkout code
+        uses: actions/checkout@v4  # تغییر از v3 به v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5  # تغییر از v4 به v5
+        with:
+          python-version: '3.9'
