@@ -1,10 +1,9 @@
 import requests
 import base64
 
-# لیست منابع معتبر (این‌ها آدرس‌های اصلی هستند)
+# لینک مستقیم فایل خروجی این ریپازیتوری که فرستادی
 SOURCES = [
-    "https://raw.githubusercontent.com/freefq/free/master/v2",
-    "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/V2RAY_SUB/main/v2ray.txt"
 ]
 
 def get_configs():
@@ -20,7 +19,7 @@ def get_configs():
 
 if __name__ == "__main__":
     configs = get_configs()
-    # تبدیل به Base64 برای اینکه در برنامه کار کند
-    encoded = base64.b64encode(configs.encode('utf-8')).decode('utf-8')
-    with open("subscription.txt", "w") as f:
-        f.write(encoded)
+    # این منبع خودش کانفیگ‌ها را در قالب بیس۶۴ دارد، 
+    # اگر دیدی در برنامه کار نمی‌کند، خط پایین را فقط بنویس: f.write(configs)
+    with open("subscription.txt", "w", encoding="utf-8") as f:
+        f.write(configs)
