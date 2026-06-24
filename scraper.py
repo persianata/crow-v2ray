@@ -4,6 +4,7 @@ import base64
 # لینک مستقیم فایل خروجی این ریپازیتوری که فرستادی
 SOURCES = [
     "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/V2RAY_SUB/main/v2ray.txt"
+     "https://raw.githubusercontent.com/amirkma/proxykma/refs/heads/main/mix.txt"
 ]
 
 def get_configs():
