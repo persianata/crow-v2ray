@@ -1,5 +1,4 @@
 name: Update
-
 on:
   schedule:
     - cron: '*/15 * * * *'
@@ -12,32 +11,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.9'
-
-      - name: Install dependencies
-        run: pip install requests
-
-      - name: Run Scraper
-        run: python scraper.py
-
-      - name: Commit and push changes
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.9'}
+      - run: pip install requests
+      - run: python scraper.py
+      - name: Push updates
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          
-          # اضافه کردن هر دو فایل به لیست تغییرات
           git add sub1.txt sub2.txt
-          
-          # بررسی اینکه آیا تغییری ایجاد شده یا نه
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update subscription files sub1 and sub2"
-            git push
-          fi
+          # فقط اگر تغییر داشت Commit کن
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update configs" && git push)
