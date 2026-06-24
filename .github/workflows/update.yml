@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: --no-deprecation # این خط هشدارها را ساکت می‌کند
     permissions: {contents: write}
     steps:
       - name: Checkout code
