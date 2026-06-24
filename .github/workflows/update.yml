@@ -6,7 +6,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # این خط حیاتی است
     steps:
+      - uses: actions/checkout@v4
+      # ... بقیه مراحل ...
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4  # اضافه کردن این خط
         with:
