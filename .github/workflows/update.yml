@@ -3,25 +3,36 @@ on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # این خط حیاتی است
     steps:
-      - uses: actions/checkout@v4
-      # ... بقیه مراحل ...
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4  # اضافه کردن این خط
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '24'          # اجبار به استفاده از نسخه جدید
-      - uses: actions/setup-python@v5
-        with: {python-version: '3.9'}
-      - run: pip install requests
-      - run: python scraper.py
-      - run: |
-          git config --global user.name 'bot'
-          git config --global user.email 'bot@bot.com'
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Scraper
+        run: python scraper.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add subscription.txt
-          git commit -m "update" || exit 0
-          git push
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update subscription.txt"
+            git push
+          fi
