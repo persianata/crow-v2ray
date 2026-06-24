@@ -1,4 +1,5 @@
 name: Update
+
 on:
   schedule:
     - cron: '*/15 * * * *'
@@ -29,10 +30,14 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add subscription.txt
+          
+          # اضافه کردن هر دو فایل به لیست تغییرات
+          git add sub1.txt sub2.txt
+          
+          # بررسی اینکه آیا تغییری ایجاد شده یا نه
           if git diff --quiet && git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update subscription.txt"
+            git commit -m "Update subscription files sub1 and sub2"
             git push
           fi
