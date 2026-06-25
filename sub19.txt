@@ -1,16 +1,8 @@
-trojan://lhvfOzkRQqNd9cLDwpryrAkFGgqzlZR9Fi@38.54.13.189:443?security=tls&headerType=none&type=tcp&sni=38.54.13.189#Global 🌐 | @Raydikalx | 879
-    "cMaxLifetimeMs" : 0,
-vless://317876c4-3de6-4b46-a19e-59b920bb7a28@104.18.16.56:443?path=/ws?ed=2560&security=tls&encryption=none&insecure=0&host=hostingiran.szirsina.ir&fp=chrome&type=ws&allowInsecure=0&sni=hostingiran.szirsina.ir#Global 🌐 | @Raydikalx | 1209
-vless://dcbb2940-bb24-41fd-953e-2a24e34a9790@local.cloud-play.ir:80?mode=auto&path=/&security=none&encryption=none&extra={"mode":"auto","xPaddingBytes":"100-1000"}&host=xenoengineer.com&type=xhttp#🇨🇦 CA | 151.101.2.5
-vless://b267a8aa-1d9e-65e0-00dc-da8c796dc4cd@104.16.72.70:443?path=/&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=x.gamingdll.ir&fp=chrome&type=ws&allowInsecure=0&sni=x.gamingdll.ir#Global 🌐 | @Raydikalx | 2103
-vmess://eyJ2IjoiMiIsInBzIjoi8J+HqfCfh6ogREUgfCA0OS4xMy43LjE0NiIsImFkZCI6IjQ5LjEzLjcuMTQ2IiwicG9ydCI6NTYyODUsImlkIjoiODkyNGQxOGUtZDhmZi00Nzc0LWI1MTEtNzVlMGNiYWRhZGRmIiwiYWlkIjowLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoiaHR0cCIsImhvc3QiOiJ0ZWxld2ViaW9uLmNvbSIsInBhdGgiOiIvIiwidGxzIjoibm9uZSJ9
-vless://d1486f14-ccaf-431c-82e5-e47a51cbf0d9@91.193.58.246:8443?path=/&security=tls&encryption=none&insecure=0&host=nova-pearl-core-cb58.nova-ff069e.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=nova-pearl-core-cb58.nova-ff069e.workers.dev#GB 🇬🇧 | @Raydikalx | 2289
-vless://7521b247-9b73-46ab-8bae-341ee17f2efc@185.143.235.201:80?path=/&security=none&encryption=none&host=t1i6.niropardaz.ir&type=ws#Global 🌐 | @Raydikalx | 1625
-vless://0058c215-ab1e-400c-a403-b5b2fda7e846@151.101.118.151:80?path=/&security=none&encryption=none&host=max-gb1.global.ssl.fastly.net&type=ws#🇺🇸 US | 151.101.118.151
-vless://1ce9392f-caf4-48f7-bbb9-475b101fbde0@188.114.97.6:443?path=/id-tksi&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Binsecure=0&amp%3Bhost=graph.instagram.com.cyylr.eu.cc&amp%3Btype=ws&amp%3BallowInsecure=0&amp%3Bsni=graph.instagram.com.cyylr.eu.cc#Global 🌐 | @Raydikalx | 2729
-vless://c6e7823a-a3b3-42af-ae75-7882c2d6c5b3@5.45.184.133:13379?encryption=none&path=/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN/Begoo_VPN&security=none&type=ws#US 🇺🇸 | @Raydikalx | 237
-ss://YWVzLTEyOC1nY206dDZkMjZpZDBwanpkbzN4NXd0bGY=@69.164.240.83:10878#US 🇺🇸 | @Raydikalx | 3119
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.178:443#Global 🌐 | @Raydikalx | 725
-trojan://Kr7j6I3BEeGvTlFvQkVxxg@malavang.hardvezoo.ir:2763?type=ws&path=/#Global 🌐 | @Raydikalx | 798
-vless://ecb790d4-36ca-4dfc-a142-b3a395d1c50d@codepen.io:443?path=/ld?ed=2048&security=tls&alpn=h2,http/1.1&encryption=none&host=ad1.xiqpanelz.com&fp=chrome&type=ws&sni=ad1.xiqpanelz.com#🇨🇦 CA | 104.16.163.32
-socks://UjM4WWNqMWJuR1F0RldQN2NMVU1neUdDOlRlbDZAU29vblRlYW0@fi-esp.pvdata.host:1080#Global 🌐 | @Raydikalx | 572
+vless://f465fe94-87f4-448b-abc3-4855d2351a3a@194.147.214.197:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=vtbYKmQECfnd9IQN3SvhlCWlWHwEzHRA0rD_wT46TnA&security=reality&sid=cd8971da5a669139&sni=yahoo.com&type=tcp#Global 🌐 | @Raydikalx | 2503
+vless://54bb59cf-96fc-4a66-8488-fa2391f2e650@190.97.165.84:448?encryption=none&flow=xtls-rprx-vision&fp=&pbk=XxCsLlJ3kJJa2MiPHS3FlF0DyAS9TkQkn8lfCVZgDQw&security=reality&sid=cd2d4a8f08aa985d&sni=www.cloudflare.com&type=tcp#Global 🌐 | @Raydikalx | 1398
+vless://82d47c52-9738-4d40-93a4-220bab575c60@213.176.16.179:443?security=reality&encryption=none&pbk=EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k&fp=chrome&type=grpc&serviceName=grpc&sni=treng.loralden.com&sid=ed72a429f0135a3f#NL 🇳🇱 | @Raydikalx | 444
+trojan://Iwzl7RHG_IE2qwsJ3uYIDA@irmedia12.pmme6.top:22443?security=none&type=tcp&headerType=&path=&host=#Global 🌐 | @Raydikalx | 782
+vless://991519c1-3680-49b7-bb9f-9029a7a39067@c2.s-sub.org:8443?path=/&security=tls&alpn=h2,http/1.1&encryption=none&insecure=0&host=backup.f-sub.cfd&fp=chrome&type=ws&allowInsecure=0&sni=backup.f-sub.cfd#IR 🇮🇷 | @Raydikalx | 1878
+vless://1e72b01d-4e45-4ba4-b0a5-f9c559350e5f@ez-e25f72.ezaccess1a1794b.workers.dev:443?path=/&security=tls&encryption=none&insecure=0&host=ez-e25f72.ezaccess1a1794b.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=ez-e25f72.ezaccess1a1794b.workers.dev#Global 🌐 | @Raydikalx | 1076
+vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@13.36.118.76:22224?type=ws&security=tls&path=/telegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#Global 🌐 | @Raydikalx | 918
+vless://8481cfbb-49a2-df3b-2af2-949631ef5848@104.20.6.134:2096?encryption=none&security=tls&sni=f927b3b16dff26f5.mizgerdiran.com&fp=chrome&alpn=h3,h2,http/1.1&insecure=0&allowInsecure=0&type=xhttp&host=f927b3b16dff26f5.mizgerdiran.com&path=/iran/ws?ed=2083&mode=auto#Global 🌐 | @Raydikalx | 1701
