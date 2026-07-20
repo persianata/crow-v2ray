@@ -1,11 +1,13 @@
 import requests
 import os
+import time
+import random
 
-# خواندن اطلاعات از Secrets
+# دریافت اطلاعات از Secretهای گیت‌هاب
 BALE_TOKEN = os.environ.get("BALE_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
 
-# لیست کامل منابع شما
+# --- لیست سورس‌ها را دقیقاً اینجا قرار دادم ---
 SOURCES = [
     "https://raw.githubusercontent.com/3nerg0n/vless-parser/refs/heads/main/sub_vless_3nerg0n_92sh81",
     "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/mix.txt",
@@ -32,43 +34,38 @@ SOURCES = [
     "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/v2ray.txt",
     "https://raw.githubusercontent.com/barry-far/v2ray-config/main/v2ray.txt"
 ]
-
-def send_to_bale_with_file(file_path, caption):
-    if BALE_TOKEN and CHAT_ID:
-        url = f"https://tapi.bale.ai/bot{BALE_TOKEN}/sendDocument"
-        try:
-            with open(file_path, 'rb') as f:
-                requests.post(url, data={"chat_id": CHAT_ID, "caption": caption}, files={"document": f}, timeout=60)
-        except Exception as e:
-            print(f"Error sending file: {e}")
+# ---------------------------------------------
 
 def get_all_configs():
-    unique_configs = {}
+    all_configs = []
     for url in SOURCES:
         try:
-            response = requests.get(url, timeout=15)
+            response = requests.get(url, timeout=10)
             if response.status_code == 200:
-                for line in response.text.splitlines():
-                    clean_line = line.strip()
-                    if len(clean_line) > 20:
-                        base_config = clean_line.split('#')[0]
-                        unique_configs[base_config] = clean_line
+                all_configs.extend(response.text.splitlines())
         except:
             continue
-    return list(unique_configs.values())
+    return list(set(all_configs))
+
+def send_to_bale(file_path, caption):
+    if BALE_TOKEN and CHAT_ID:
+        url = f"https://tapi.bale.ai/bot{BALE_TOKEN}/sendDocument"
+        with open(file_path, 'rb') as f:
+            requests.post(url, data={"chat_id": CHAT_ID, "caption": caption}, files={"document": f}, timeout=60)
 
 if __name__ == "__main__":
     all_configs = get_all_configs()
-    
-    # ذخیره فایل کامل برای مخزن
-    full_file = "all_configs.txt"
-    with open(full_file, "w", encoding="utf-8") as f:
+    with open("all_configs.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(all_configs))
         
-    # ارسال فقط ۱۰۰ تای اول به بله برای راحتی در استفاده
-    limited_file = "top_configs.txt"
-    with open(limited_file, "w", encoding="utf-8") as f:
-        f.write("\n".join(all_configs[:100]))
+    random.shuffle(all_configs)
     
-    msg = f"✅ ۱۰۰ کانفیگ منتخب ارسال شد.\nتعداد کل کانفیگ‌های جمع‌آوری شده: {len(all_configs)}"
-    send_to_bale_with_file(limited_file, msg)
+    subs = ["sub1.txt", "sub2.txt", "sub3.txt"]
+    for sub in subs:
+        subset = all_configs[:100]
+        all_configs = all_configs[100:]
+        if subset:
+            with open(sub, "w", encoding="utf-8") as f:
+                f.write("\n".join(subset))
+            send_to_bale(sub, f"✅ فایل {sub} شامل ۱۰۰ کانفیگ جدید")
+            time.sleep(5)
