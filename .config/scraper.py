@@ -29,12 +29,13 @@ SOURCES = [
 ]
 
 def is_valid_config(config):
-    # فیلتر سخت‌گیرانه برای حذف آشغال‌ها و فایل‌های HTML
-    valid_prefixes = ("vless://", "vmess://", "trojan://", "ss://", "socks://")
-    if not config.startswith(valid_prefixes):
+    # پروتکل‌هایی که در ایران معمولاً پایدارتر هستند
+    preferred_protocols = ("vless://", "trojan://", "vmess://")
+    
+    if not config.startswith(preferred_protocols):
         return False
-    # طول کانفیگ نباید بیش از حد کوتاه یا بلند باشد (حذف فایل‌های غیرمعتبر)
-    if len(config) < 20 or len(config) > 800:
+        
+    if len(config) < 20 or len(config) > 1000:
         return False
     return True
 
@@ -54,16 +55,15 @@ def get_all_configs():
 
 if __name__ == "__main__":
     configs = get_all_configs()
-    # محدود کردن کل خروجی به ۱۰۰۰ عدد برای کاهش شدید حجم
-    configs = configs[:1000]
+    
+    # محدودیت ۵۰۰۰ کانفیگ برای تعادل بین حجم و تنوع
+    configs = configs[:5000] 
 
-    # نوشتن فایل all_servers.txt
     with open("all_servers.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(configs))
         
-    # نوشتن فایل‌های sub
-    BATCH_SIZE = 50
-    for i in range(20): # 20 فایل 50 تایی می‌شود 1000 تا
+    BATCH_SIZE = 100
+    for i in range(50): 
         batch = configs[i*BATCH_SIZE : (i+1)*BATCH_SIZE]
         if not batch: break
         with open(f"sub{i+1}.txt", "w", encoding="utf-8") as f:
