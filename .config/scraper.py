@@ -29,27 +29,35 @@ SOURCES = [
 ]
 
 def get_all_configs():
-    all_lines = set()
+    unique_configs = {}
     for url in SOURCES:
         try:
             response = requests.get(url, timeout=15)
             if response.status_code == 200:
+                count = 0
                 for line in response.text.splitlines():
-                    if len(line.strip()) > 20 and "test" not in line.lower() and "example" not in line.lower():
-                        all_lines.add(line.strip())
+                    clean_line = line.strip()
+                    # بررسی اعتبار اولیه
+                    if len(clean_line) > 20 and "test" not in clean_line.lower() and "example" not in clean_line.lower():
+                        # حذف نام کانفیگ برای تشخیص تکراری‌ها (هر چه قبل از # است کلید اصلی است)
+                        base_config = clean_line.split('#')[0]
+                        if base_config not in unique_configs:
+                            unique_configs[base_config] = clean_line
+                            count += 1
+                print(f"Source {url.split('/')[-1]} added {count} new unique configs.")
         except:
             continue
-    return list(all_lines)
+    return list(unique_configs.values())
 
 if __name__ == "__main__":
     configs = get_all_configs()
     
-    # حذف فایل‌های قبلی برای تمیز ماندن ریپازیتوری
+    # پاکسازی فایل‌های قدیمی
     for i in range(1, 51):
         if os.path.exists(f"sub{i}.txt"):
             os.remove(f"sub{i}.txt")
     
-    # تقسیم به ۵۰ فایل، هر کدام ۵۰۰ تا
+    # تقسیم به ۵۰ فایل
     BATCH_SIZE = 500
     for i in range(50):
         batch = configs[i*BATCH_SIZE : (i+1)*BATCH_SIZE]
