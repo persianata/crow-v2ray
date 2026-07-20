@@ -28,27 +28,15 @@ SOURCES = [
     "https://raw.githubusercontent.com/barry-far/v2ray-config/main/v2ray.txt"
 ]
 
-def is_valid_config(config):
-    # پروتکل‌هایی که در ایران معمولاً پایدارتر هستند
-    preferred_protocols = ("vless://", "trojan://", "vmess://")
-    
-    if not config.startswith(preferred_protocols):
-        return False
-        
-    if len(config) < 20 or len(config) > 1000:
-        return False
-    return True
-
 def get_all_configs():
     all_lines = set()
     for url in SOURCES:
         try:
-            response = requests.get(url, timeout=10)
+            response = requests.get(url, timeout=15)
             if response.status_code == 200:
                 for line in response.text.splitlines():
-                    clean_line = line.strip()
-                    if is_valid_config(clean_line):
-                        all_lines.add(clean_line)
+                    if len(line.strip()) > 20 and "test" not in line.lower() and "example" not in line.lower():
+                        all_lines.add(line.strip())
         except:
             continue
     return list(all_lines)
@@ -56,14 +44,14 @@ def get_all_configs():
 if __name__ == "__main__":
     configs = get_all_configs()
     
-    # محدودیت ۵۰۰۰ کانفیگ برای تعادل بین حجم و تنوع
-    configs = configs[:5000] 
-
-    with open("all_servers.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(configs))
-        
-    BATCH_SIZE = 100
-    for i in range(50): 
+    # حذف فایل‌های قبلی برای تمیز ماندن ریپازیتوری
+    for i in range(1, 51):
+        if os.path.exists(f"sub{i}.txt"):
+            os.remove(f"sub{i}.txt")
+    
+    # تقسیم به ۵۰ فایل، هر کدام ۵۰۰ تا
+    BATCH_SIZE = 500
+    for i in range(50):
         batch = configs[i*BATCH_SIZE : (i+1)*BATCH_SIZE]
         if not batch: break
         with open(f"sub{i+1}.txt", "w", encoding="utf-8") as f:
