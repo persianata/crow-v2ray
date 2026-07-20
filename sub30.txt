@@ -321,7 +321,7 @@ vless://094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa@nl-78w-c.southnetworks.cloud:80?enc
 vless://094f9239-e193-4f97-b6ca-843c01e5af7c@skk.moe:2086?path=%2FFOX_VPN66&security=none&encryption=none&host=fox1.%E4%BD%A0%E6%9C%89%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%85%89%E5%BD%A9%E7%9A%84%E9%97%AE%E9%A2%98.website.&type=ws#
 vless://09548571-364e-4876-8e92-98f423e73913@a.r-o-o-t3.ir:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.linkedin.com&fp=chrome&security=reality&pbk=nA87ol2_2BADZHfXhH00wy3fNe4R8TiGG_IQbzWbPnA&sid=56c96c1d14#
 vless://09548571-364e-4876-8e92-98f423e73913@a.r-o-o-t3.ir:443?security=reality&encryption=none&pbk=nA87ol2_2BADZHfXhH00wy3fNe4R8TiGG_IQbzWbPnA&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.linkedin.com&sid=56c96c1d14#
-vless://09548571-364e-4876-8e92-98f423e73913@a.r-o-o-t3.ir:443?security=reality&encryption=none&pbk=nA87ol2_2BADZHfXhH00wy3fNe4R8TiGG_IQbzWbPnA&host=www.linkedin.com&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.linkedin.com&sid=56c96c1d14#Global 🌐 | @Raydikalx | 1443
+vless://09548571-364e-4876-8e92-98f423e73913@a.r-o-o-t3.ir:443?security=reality&encryption=none&pbk=nA87ol2_2BADZHfXhH00wy3fNe4R8TiGG_IQbzWbPnA&host=www.linkedin.com&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.linkedin.com&sid=56c96c1d14#Global 🌐 | @Raydikalx | 1419
 vless://0954c6d7-f4a7-44ff-9a78-1939f9ba43d4@104.26.12.54:443/?type=ws&encryption=none&host=server20.aibox.tv&path=%2FTG-AiLuMao%2F&security=tls&sni=server20.aibox.tv&alpn=h3%2Ch2%2Chttp%2F1.1&fp=chrome#
 vless://0954c6d7-f4a7-44ff-9a78-1939f9ba43d4@108.162.194.137:443/?type=ws&encryption=none&host=server20.aibox.tv&path=%2FTG-AiLuMao%2F&security=tls&sni=server20.aibox.tv&alpn=h3%2Ch2%2Chttp%2F1.1&fp=chrome#
 vless://095770d9-833a-44fa-9e8f-e0f01fb0dc46@87.228.124.242:443?encryption=none&type=grpc&security=reality&mode=gun&fp=QQ&sni=ru.polyarhub.com&pbk=cByTcSybJYS5iSvLiepXqhSoMhBgWdeiX2PjxpqLvR4&sid=11e0631ac2dfc7fa&spx=/#
@@ -396,7 +396,7 @@ vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@146.185.172.227:2053?path=%2F&secur
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@146.190.236.243:2087?&security=tls&fp=chrome&sni=vpn47.cc.cd&type=ws&headerType=&host=vpn47.cc.cd&path=%2F#
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@149.210.243.176:443/?type=ws&encryption=none&host=vpn47.cc.cd&path=%2F&security=tls&sni=vpn47.cc.cd&fp=chrome#
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@149.210.243.176:443?encryption=none&fp=chrome&host=vpn47.cc.cd&path=%2F&security=tls&sni=vpn47.cc.cd&type=ws#
-vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@149.210.243.176:443?encryption=none&security=tls&sni=vpn47.cc.cd&fp=chrome&insecure=0&allowInsecure=0&ech=cloudflare-ech.com+https://dns.alidns.com/dns-query&type=ws&host=vpn47.cc.cd&path=/#Global 🌐 | @Raydikalx | 1444
+vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@149.210.243.176:443?encryption=none&security=tls&sni=vpn47.cc.cd&fp=chrome&insecure=0&allowInsecure=0&ech=cloudflare-ech.com+https://dns.alidns.com/dns-query&type=ws&host=vpn47.cc.cd&path=/#Global 🌐 | @Raydikalx | 1420
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@149.33.19.136:2053?encryption=none&security=tls&sni=vpn47.cc.cd&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=vpn47.cc.cd&path=%2F#
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@149.33.19.136:2053?fp=chrome&host=vpn47.cc.cd&path=%2F&security=tls&sni=vpn47.cc.cd&type=ws#
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@152.53.200.72:8443/?type=ws&encryption=none&host=vpn47.cc.cd&path=%2F&security=tls&sni=vpn47.cc.cd#
@@ -461,7 +461,7 @@ vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@193.181.214.98:2083?encryption=none
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@193.233.251.202:443?path=%2F&security=tls&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=vpn47.cc.cd#
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@194.53.53.62:443?security=tls&type=ws&path=/&host=vpn47.cc.cd&packetEncoding=xudp&sni=vpn47.cc.cd&fp=chrome&encryption=none#
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@194.76.173.6:2053?&security=tls&fp=chrome&sni=vpn47.cc.cd&type=ws&headerType=none&host=vpn47.cc.cd&path=%2F#
-vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@194.76.173.6:2053?encryption=none&security=tls&sni=vpn47.cc.cd&fp=chrome&insecure=0&allowInsecure=0&ech=cloudflare-ech.com+https://dns.alidns.com/dns-query&type=ws&host=vpn47.cc.cd&path=/#Global 🌐 | @Raydikalx | 1445
+vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@194.76.173.6:2053?encryption=none&security=tls&sni=vpn47.cc.cd&fp=chrome&insecure=0&allowInsecure=0&ech=cloudflare-ech.com+https://dns.alidns.com/dns-query&type=ws&host=vpn47.cc.cd&path=/#Global 🌐 | @Raydikalx | 1421
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@195.123.241.122:50008?security=tls&type=ws&path=/&host=vpn47.cc.cd&packetEncoding=xudp&sni=vpn47.cc.cd&fp=chrome#
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@198.211.121.165:443/?type=ws&encryption=none&host=vpn47.cc.cd&path=%2F&security=tls&sni=vpn47.cc.cd&fp=chrome#
 vless://0970324b-8c61-4ae7-8c3f-385a6f1e17e4@198.211.121.165:443?encryption=none&fp=chrome&host=vpn47.cc.cd&path=%2F&security=tls&sni=vpn47.cc.cd&type=ws#

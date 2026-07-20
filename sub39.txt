@@ -198,7 +198,7 @@ vless://12929592-a7bd-41eb-ab4d-d804f76c4ff9@96.47.230.145:36968?encryption=none
 vless://12929592-a7bd-41eb-ab4d-d804f76c4ff9@96.47.230.145:37152?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&sni=video.yahoo.com&pbk=v0qz2dJb5tmR8eeRTMJJ3g5m1wwUyhutkaOMNFLnAns&sid=01#
 vless://12929592-a7bd-41eb-ab4d-d804f76c4ff9@96.47.230.145:37643?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&sni=yahooapis.com&pbk=v0qz2dJb5tmR8eeRTMJJ3g5m1wwUyhutkaOMNFLnAns&sid=01#
 vless://12929592-a7bd-41eb-ab4d-d804f76c4ff9@96.47.230.145:37820?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&sni=video.yahoo.com&pbk=v0qz2dJb5tmR8eeRTMJJ3g5m1wwUyhutkaOMNFLnAns&sid=02#
-vless://12929592-a7bd-41eb-ab4d-d804f76c4ff9@96.47.230.145:38731?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&sni=m.yahoo.com&pbk=v0qz2dJb5tmR8eeRTMJJ3g5m1wwUyhutkaOMNFLnAns&sid=00#Global 🌐 | @Raydikalx | 3047
+vless://12929592-a7bd-41eb-ab4d-d804f76c4ff9@96.47.230.145:38731?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&sni=m.yahoo.com&pbk=v0qz2dJb5tmR8eeRTMJJ3g5m1wwUyhutkaOMNFLnAns&sid=00#Global 🌐 | @Raydikalx | 3025
 vless://12929592-a7bd-41eb-ab4d-d804f76c4ff9@96.47.230.145:40607?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&sni=yahooapis.com&pbk=v0qz2dJb5tmR8eeRTMJJ3g5m1wwUyhutkaOMNFLnAns&sid=02#
 vless://12929592-a7bd-41eb-ab4d-d804f76c4ff9@96.47.230.145:40964?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&sni=video.yahoo.com&pbk=v0qz2dJb5tmR8eeRTMJJ3g5m1wwUyhutkaOMNFLnAns&sid=01#
 vless://12929592-a7bd-41eb-ab4d-d804f76c4ff9@96.47.230.145:41141?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&sni=video.yahoo.com&pbk=v0qz2dJb5tmR8eeRTMJJ3g5m1wwUyhutkaOMNFLnAns&sid=02#
@@ -356,7 +356,7 @@ vless://12d75b7d-8fdf-4785-8d62-d836854e7e63@172.64.155.209:2052?encryption=none
 vless://12d75b7d-8fdf-4785-8d62-d836854e7e63@172.64.155.209:2052?encryption=none&host=parking-nfchbwa1-v2.parking-1ab.workers.dev&path=%2F&security=none&type=ws#
 vless://12d75b7d-8fdf-4785-8d62-d836854e7e63@172.64.155.209:2052?encryption=none&host=parking-nfchbwa1-v2.parking-1ab.workers.dev&security=none&type=ws#
 vless://12d75b7d-8fdf-4785-8d62-d836854e7e63@www.visa.com.sg:2052?encryption=none&security=none&type=ws&host=parking-nfchbwa1-v2.parking-1ab.workers.dev&path=%2F%3Fed%3D2560#
-vless://12d8b109-394d-4d0c-a208-2b9a41f09f36@188.114.97.6:443?path=/my-wbv&security=tls&encryption=none&insecure=0&host=ads.ruangguru.com.cyylr.eu.cc&type=ws&allowInsecure=0&sni=ads.ruangguru.com.cyylr.eu.cc#Global 🌐 | @Raydikalx | 1500
+vless://12d8b109-394d-4d0c-a208-2b9a41f09f36@188.114.97.6:443?path=/my-wbv&security=tls&encryption=none&insecure=0&host=ads.ruangguru.com.cyylr.eu.cc&type=ws&allowInsecure=0&sni=ads.ruangguru.com.cyylr.eu.cc#Global 🌐 | @Raydikalx | 1477
 vless://12d9573c-e4c6-4464-9040-8d4804a36a04@tn14.radmehrmax.ir:8088?encryption=none&security=none&type=tcp&headerType=http#
 vless://12da0644-2261-4dd6-a206-c0cf7ea4278b@eyvs.ankitfa.ir:2096?path=%2F&security=tls&alpn=h2&encryption=none&host=eyvs.ankitfa.ir&fp=chrome&type=ws&sni=eyvs.ankitfa.ir#
 vless://12da0644-2261-4dd6-a206-c0cf7ea4278b@eyvs.ankitfa.ir:2096?path=/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN&security=tls&alpn=h2&encryption=none&host=eyvs.ankitfa.ir&fp=chrome&type=ws&sni=eyvs.ankitfa.ir#
@@ -396,7 +396,7 @@ vless://12f6f3e2-eb1c-41cb-9ba2-9de1b85fb62b@net5.irajapan.store:2052?security=n
 vless://12f6f3e2-eb1c-41cb-9ba2-9de1b85fb62b@w2.gogoli.xyz:2052?security=none&encryption=none&type=ws&path=/&host=net.irajapan.store#
 vless://12fbfce4-80bc-4559-9936-337963bb3fca@Samd.softupdl.ir:56792?encryption=none&security=none&type=tcp&headerType=http&path=/&host=play.google.com#
 vless://12fbfce4-80bc-4559-9936-337963bb3fca@Samd.softupdl.ir:56792?security=none&amp;encryption=none&amp;host=play.google.com&amp;headerType=http&amp;type=tcp#[548][UnResolvedDomains][0][VLESS][None][proxy_mtm][2026-07-19][2026-07-20
-vless://12fbfce4-80bc-4559-9936-337963bb3fca@Samd.softupdl.ir:56792?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Global 🌐 | @Raydikalx | 1501
+vless://12fbfce4-80bc-4559-9936-337963bb3fca@Samd.softupdl.ir:56792?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Global 🌐 | @Raydikalx | 1478
 vless://12fbfce4-80bc-4559-9936-337963bb3fca@soskeynets.softupdl.ir:56792?encryption=none&security=none&type=tcp&headerType=http&path=/&host=play.google.com#
 vless://12fd53ec-9184-41a0-8ab5-1910ad8d6e8d@gr.dnszone.top:45500?security=none&encryption=none&headerType=none&type=tcp#
 vless://13--id-VPNCUSTOMIZE@VPNCUSTOMIZE.fastly80-3.hosting-ip.com:80?path=/telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE%3Fed%3D2560&security=none&host=JoinBedeeeeee--VPNCUSTOMIZE.ir.&type=ws#
@@ -473,7 +473,7 @@ vless://133066ba-0400-4ece-f486-d157d509d331@185.146.173.59:2096?mode=gun&amp;se
 vless://1333101e-2858-485c-a173-2f45aa3cbc57@www.parsvds.ir:8080?security=&type=ws&path=/Telegram:@UnlimitedDev-Telegram:@UnlimitedDev?ed%3D8080&host=unlimiteddev-vpn.unlimiteddev.Community.&encryption=none#
 vless://1333101e-2858-485c-a173-2f45aa3cbc57@zula.ir:8080?security=&type=ws&path=/Telegram:@UnlimitedDev-Telegram:@UnlimitedDev?ed%3D8080&host=unlimiteddev-vpn.unlimiteddev.Community.&encryption=none#
 vless://133361c8-60e7-447a-dd5b-e7af60b9d115@193.238.153.84:33817?security=none&encryption=none&headerType=none&type=tcp#
-vless://1333d042-1176-83a2-6651-d1bedc98cd3b@x4g-production-6be3.up.railway.app:443?encryption=none&security=tls&type=ws&host=x4g-production-6be3.up.railway.app&path=/ws/1333d042-1176-83a2-6651-d1bedc98cd3b&sni=x4g-production-6be3.up.railway.app&fp=chrome&alpn=http/1.1#US 🇺🇸 | @Raydikalx | 1502
+vless://1333d042-1176-83a2-6651-d1bedc98cd3b@x4g-production-6be3.up.railway.app:443?encryption=none&security=tls&type=ws&host=x4g-production-6be3.up.railway.app&path=/ws/1333d042-1176-83a2-6651-d1bedc98cd3b&sni=x4g-production-6be3.up.railway.app&fp=chrome&alpn=http/1.1#US 🇺🇸 | @Raydikalx | 1479
 vless://1333d042-1176-83a2-6651-d1bedc98cd3b@x4g-production-6be3.up.railway.app:443?encryption=none&security=tls&type=ws&host=x4g-production-6be3.up.railway.app&path=/ws/1333d042-1176-83a2-6651-d1bedc98cd3b&sni=x4g-production-6be3.up.railway.app&fp=ios&alpn=http/1.1#
 vless://13363f83-f3a2-4ae5-b62a-ed5ed81193bf@188.245.92.123:6666?security=none&encryption=none&headerType=none&type=tcp#
 vless://13363f83-f3a2-4ae5-b62a-ed5ed81193bf@188.245.92.123:6666?security=none&encryption=none&host=%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=none&type=tcp#

@@ -13,7 +13,7 @@ vless://1798b14b-aee0-4008-ba9a-2e53877761b4@104.21.87.19:80/?type=ws&host=bbbnm
 vless://1799eca0-9169-407e-8b55-beca16edcc7e@tn14.radmehrmax.ir:8088?encryption=none&security=none&type=tcp&headerType=http#
 vless://179ddf63-c263-40ff-98a1-f53708573059@188.40.210.8:1083?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=&encryption=none&headerType=none&type=tcp#
 vless://179ddf63-c263-40ff-98a1-f53708573059@188.40.210.8:1083?security=&amp;encryption=none&amp;headerType=none&amp;type=tcp#[770][DE][0][VLESS][None][FreakConfig][2026-07-14][2026-07-20
-vless://179ddf63-c263-40ff-98a1-f53708573059@188.40.210.8:1083?security=&encryption=none&headerType=none&type=tcp#Global 🌐 | @Raydikalx | 1542
+vless://179ddf63-c263-40ff-98a1-f53708573059@188.40.210.8:1083?security=&encryption=none&headerType=none&type=tcp#Global 🌐 | @Raydikalx | 1520
 vless://179ddf63-c263-40ff-98a1-f53708573059@188.40.210.8:1083?security=none&encryption=none&headerType=none&type=tcp#
 vless://179f8884-44ed-4cc1-b7c8-fc7dfec83145@46.224.213.206:11332?security=reality&encryption=none&pbk=Yozi8V5IYT7TzszTYwxnxMO-RZ93qCRFpgzZYehbqiM&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.yahoo.com&sid=74bc0da65781e5dd#
 vless://17a0ce68-6a4b-44b9-9ff2-1ff325cb7377@link.mizbanertebatfarda.site:6013?path=%2F&security=none&encryption=none&host=soft98.ir&type=ws#
@@ -309,7 +309,7 @@ vless://181fd3e2-df14-43ba-8a9b-dfb75866fbc1@H:8696?security=none&type=grpc&head
 vless://181fd3e2-df14-43ba-8a9b-dfb75866fbc1@tun.shadowcx.top:100?security=none&type=grpc&headerType=&serviceName=1081vless&authority=&mode=gun#
 vless://181fd3e2-df14-43ba-8a9b-dfb75866fbc1@tun.shadowcx.top:8696?security=none&type=grpc&headerType=&serviceName=200vless&authority=&mode=gun#
 vless://181fd3e2-df14-43ba-8a9b-dfb75866fbc1@tun.shadowcx.top:8697?security=none&type=tcp&headerType=&path=&host=#
-vless://182039a9-6bf0-40dc-86ce-840c6a2cdcc1@lyouw.pastilbastani.ir:443?encryption=none&security=none&type=tcp&headerType=http&host=play.google.com#Global 🌐 | @Raydikalx | 1543
+vless://182039a9-6bf0-40dc-86ce-840c6a2cdcc1@lyouw.pastilbastani.ir:443?encryption=none&security=none&type=tcp&headerType=http&host=play.google.com#Global 🌐 | @Raydikalx | 1521
 vless://1820d5f9-921a-4f22-b71f-e89899ac61fd@104.31.16.65:2087?mode=gun&security=tls&encryption=none&type=grpc&serviceName=@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray&sni=ch.RxV2ray.space#
 vless://1820d5f9-921a-4f22-b71f-e89899ac61fd@Pm.RxV2ray.space:2087?mode=gun&security=tls&encryption=none&type=grpc&serviceName=@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray&sni=ch.RxV2ray.space#
 vless://1820d5f9-921a-4f22-b71f-e89899ac61fd@cdnjs.com:2087?mode=gun&security=tls&encryption=none&type=grpc&serviceName=@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray,@RxV2ray&sni=ch.RxV2ray.space#

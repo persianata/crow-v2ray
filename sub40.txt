@@ -135,7 +135,7 @@ vless://13ad36e6-c091-43f2-8505-47d868dd544c@104.21.39.117:443?allowInsecure=1&e
 vless://13ad36e6-c091-43f2-8505-47d868dd544c@104.21.76.174:80/?type=ws&encryption=none&flow=&host=ghj.ae1autumn.cc.cd&path=%2FXR8So0uqFVa3vY9ZbxgW4#
 vless://13ad36e6-c091-43f2-8505-47d868dd544c@104.21.76.174:80?encryption=none&host=ghj.ae1autumn.cc.cd&path=%2FXR8So0uqFVa3vY9ZbxgW4&security=none&type=ws#
 vless://13ad36e6-c091-43f2-8505-47d868dd544c@104.21.94.245:80?encryption=none&host=ghju.apocalypse.cc.cd&path=%2FXR8So0uqFVa3vY9ZbxgW4&security=none&type=ws#
-vless://13ad36e6-c091-43f2-8505-47d868dd544c@172.67.141.220:80/?type=ws&encryption=none&host=ghju.apocalypse.cc.cd&path=/XR8So0uqFVa3vY9ZbxgW4&note=@FreeOnlineVPN#US 🇺🇸 | @Raydikalx | 1503
+vless://13ad36e6-c091-43f2-8505-47d868dd544c@172.67.141.220:80/?type=ws&encryption=none&host=ghju.apocalypse.cc.cd&path=/XR8So0uqFVa3vY9ZbxgW4&note=@FreeOnlineVPN#US 🇺🇸 | @Raydikalx | 1480
 vless://13ad36e6-c091-43f2-8505-47d868dd544c@172.67.141.220:80?encryption=none&host=ghju.apocalypse.cc.cd&path=%2FXR8So0uqFVa3vY9ZbxgW4&security=none&type=ws#
 vless://13ad36e6-c091-43f2-8505-47d868dd544c@172.67.145.44:443?allowInsecure=1&encryption=none&host=ffv.xx6.ccwu.cc&path=%2FXR8So0uqFVa3vY9ZbxgW4&security=tls&sni=ffv.xx6.ccwu.cc&type=ws#
 vless://13ad36e6-c091-43f2-8505-47d868dd544c@172.67.184.67:80?encryption=none&host=bhy7.ae1autumn.dpdns.org&path=%2FXR8So0uqFVa3vY9ZbxgW4&security=none&type=ws#
@@ -179,7 +179,7 @@ vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@pl.srv.anti-zapret.com:443?security
 vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@pl.srv.anti-zapret.com:443?security=reality&type=tcp&packetEncoding=xudp&sni=pl.srv.anti-zapret.com&fp=firefox&flow=xtls-rprx-vision&sid=17faf32cb516c9cb&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&encryption=none#
 vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@pl.srv.anti-zapret.com:443?type=tcp&security=reality&flow=xtls-rprx-vision&encryption=none&sni=pl.srv.anti-zapret.com&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=17faf32cb516c9cb&fp=firefox#
 vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@sw.srv.anti-zapret.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=sw.srv.anti-zapret.com&fp=firefox&security=reality&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=17faf32cb516c9cb#
-vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@sw.srv.anti-zapret.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=sw.srv.anti-zapret.com&security=reality&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=17faf32cb516c9cb#Global 🌐 | @Raydikalx | 1504
+vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@sw.srv.anti-zapret.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=sw.srv.anti-zapret.com&security=reality&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=17faf32cb516c9cb#Global 🌐 | @Raydikalx | 1481
 vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@sw.srv.anti-zapret.com:443?&security=reality&flow=xtls-rprx-vision&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&sid=17faf32cb516c9cb&fp=firefox&sni=sw.srv.anti-zapret.com&type=tcp&headerType=none&host=sw.srv.anti-zapret.com&path=%2F#
 vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@sw.srv.anti-zapret.com:443?encryption=&flow=xtls-rprx-vision&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&security=reality&sid=17faf32cb516c9cb&sni=sw.srv.anti-zapret.com&type=#
 vless://13b55e8e-fbea-4ee1-b6b7-115fa3043182@sw.srv.anti-zapret.com:443?encryption=none&amp;flow=xtls-rprx-vision&amp;fp=&amp;pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&amp;security=reality&amp;sid=17faf32cb516c9cb&amp;sni=sw.srv.anti-zapret.com&amp;type=tcp#[558][UnResolvedDomains][0][VLESS][None][oneclickvpnkeys][2026-07-18][2026-07-20
@@ -263,7 +263,7 @@ vless://13ce37df-0738-4130-9b02-a87658921feb@89.167.1.199:2087?encryption=none&s
 vless://13ce37df-0738-4130-9b02-a87658921feb@89.167.81.142:2087?encryption=none&security=none&type=tcp&headerType=http&host=play.google.com#
 vless://13ce37df-0738-4130-9b02-a87658921feb@95.217.159.175:2087?encryption=none&security=none&type=tcp&headerType=http&host=play.google.com#
 vless://13ce37df-0738-4130-9b02-a87658921feb@TuN.temas-bor.iR:2087?encryption=none&security=none&type=tcp&headerType=http&host=play.google.com#
-vless://13ce37df-0738-4130-9b02-a87658921feb@TuN.temas-bor.iR:2087?security=&encryption=none&host=play.google.com&headerType=http&type=tcp#Global 🌐 | @Raydikalx | 1507
+vless://13ce37df-0738-4130-9b02-a87658921feb@TuN.temas-bor.iR:2087?security=&encryption=none&host=play.google.com&headerType=http&type=tcp#Global 🌐 | @Raydikalx | 1484
 vless://13ce37df-0738-4130-9b02-a87658921feb@TuN.temas-bor.iR:2087?security=none&type=tcp&headerType=http&path=/&host=play.google.com&packetEncoding=xudp&encryption=none#
 vless://13ce37df-0738-4130-9b02-a87658921feb@TuN.temas-bor.iR:2087?type=tcp&encryption=none&security=none#
 vless://13ce37df-0738-4130-9b02-a87658921feb@fast.motorbazan.com:443?security=tls&type=ws&headerType=&path=&host=loosboijji.global.ssl.fastly.net&sni=ssl.fastly.com&fp=#
@@ -292,7 +292,7 @@ vless://13deef01-0a60-47ec-aa9c-8a3481e1c87f@62.238.41.102:443?security=tls&type
 vless://13deef01-0a60-47ec-aa9c-8a3481e1c87f@bot.sobhanpor.ir:443?allow_insecure=0&fp=chrome&security=tls&sni=bot.sobhanpor.ir#
 vless://13deef01-0a60-47ec-aa9c-8a3481e1c87f@bot.sobhanpor.ir:443?allow_insecure=0&security=tls&sni=bot.sobhanpor.ir#
 vless://13deef01-0a60-47ec-aa9c-8a3481e1c87f@bot.sobhanpor.ir:443?security=tls&encryption=none&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=bot.sobhanpor.ir#
-vless://13deef01-0a60-47ec-aa9c-8a3481e1c87f@bot.sobhanpor.ir:443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=bot.sobhanpor.ir#FI 🇫🇮 | @Raydikalx | 1508
+vless://13deef01-0a60-47ec-aa9c-8a3481e1c87f@bot.sobhanpor.ir:443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=bot.sobhanpor.ir#FI 🇫🇮 | @Raydikalx | 1485
 vless://13deef01-0a60-47ec-aa9c-8a3481e1c87f@bot.sobhanpor.ir:443?security=tls&type=tcp&packetEncoding=xudp&sni=bot.sobhanpor.ir&fp=chrome&encryption=none#
 vless://13e-2@85.133.197.205:21?security=none&encryption=none&headerType=none&type=tcp#
 vless://13e1ee48-0280-40d5-9e67-0d75ae5f28b5@217.144.189.90:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.google.com&security=reality&pbk=ZrY8j7QxRmezGLNIokvaP9UMPwOEQ148RNoqya2WGxg&sid=abcd1234#

@@ -110,7 +110,7 @@ vless://0c9dba2a-fc5a-b860-794f-58c7249bc4d3@SSo.parsonlines.com:443?path=%2Fstr
 vless://0c9dba2a-fc5a-b860-794f-58c7249bc4d3@SSo.parsonlines.com:443?path=%2Fstream&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=www.parsonlines.ir&fp=firefox&type=ws&allowInsecure=0&sni=WWW.ParsOnlines.ir#
 vless://0c9f23c8-fd11-4b5e-8387-cb302301fa5f@46.101.6.189:53597?security=&encryption=none&host=play.google.com&headerType=http&type=tcp#
 vless://0c9f23c8-fd11-4b5e-8387-cb302301fa5f@46.101.6.189:53597?security=none&amp;encryption=none&amp;host=play.google.com&amp;headerType=http&amp;type=tcp#[448][GB][0][VLESS][None][FreakConfig][2026-07-19][2026-07-20
-vless://0c9f23c8-fd11-4b5e-8387-cb302301fa5f@46.101.6.189:53597?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Global 🌐 | @Raydikalx | 1469
+vless://0c9f23c8-fd11-4b5e-8387-cb302301fa5f@46.101.6.189:53597?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#Global 🌐 | @Raydikalx | 1446
 vless://0ca0f2a3-f02b-450f-8499-7e651ac4daae@209.141.34.55:443?security=reality&type=tcp&packetEncoding=xudp&sni=www.apple.com&fp=chrome&flow=xtls-rprx-vision&pbk=QK-hDi9g1k5J9Rsc5qi7xQBE9gQO5MmhCr3ScMVr5zY&encryption=none#
 vless://0ca1d501-1cc0-4dac-b805-5a83f47933fd@209.97.134.121:440?security=&encryption=none&headerType=none&type=tcp#
 vless://0ca20960-99aa-4c92-b44d-e08829ef1a69@193.23.211.125:30385?encryption=none&fp=chrome&pbk=BudozUb-DKLwfXzhtlvp_FR8iZoOWwwOvr9K_jd9uQw&security=reality&sid=6232ac20545869&sni=yahoo.com&type=tcp#
@@ -170,7 +170,7 @@ vless://0cc72cd6-29b2-4dcc-af4d-2907d19a0680@199.232.245.208:443?path=%2F%3FTELE
 vless://0cc72cd6-29b2-4dcc-af4d-2907d19a0680@199.232.245.208:443?path=%2F&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;host=pan1.global.ssl.fastly.net&amp;type=ws&amp;allowInsecure=0&amp;sni=default.ssl.fastly.net#[450][UnResolvedDomains][0][VLESS][None][flyv2ray][2026-06-26][2026-07-20
 vless://0cc72cd6-29b2-4dcc-af4d-2907d19a0680@199.232.245.208:443?path=%2F&security=tls&encryption=none&insecure=0&host=pan1.global.ssl.fastly.net&type=ws&allowInsecure=0&sni=default.ssl.fastly.net#
 vless://0cc72cd6-29b2-4dcc-af4d-2907d19a0680@199.232.245.208:443?path=%2F&security=tls&encryption=none&insecure=1&host=pan1.global.ssl.fastly.net&type=ws&allowInsecure=1&sni=default.ssl.fastly.net#
-vless://0cc72cd6-29b2-4dcc-af4d-2907d19a0680@199.232.245.208:443?path=/&security=tls&encryption=none&insecure=0&host=Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en&type=ws&allowInsecure=0&sni=default.ssl.fastly.net#Global 🌐 | @Raydikalx | 1470
+vless://0cc72cd6-29b2-4dcc-af4d-2907d19a0680@199.232.245.208:443?path=/&security=tls&encryption=none&insecure=0&host=Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en---Proxy-Se7en&type=ws&allowInsecure=0&sni=default.ssl.fastly.net#Global 🌐 | @Raydikalx | 1447
 vless://0cc731b9-0375-4590-aeaa-7e2611a149fe@104.21.36.57:443?path=%2Fwsv%2F0cc731b9-0375-4590-aeaa-7e2611a149fe&security=tls&encryption=none&host=black.fullmargintraders.com&fp=firefox&type=ws&sni=black.fullmargintraders.com#
 vless://0cc731b9-0375-4590-aeaa-7e2611a149fe@104.21.36.57:443?path=%2Fwsv%2F0cc731b9-0375-4590-aeaa-7e2611a149fe&security=tls&encryption=none&host=black.fullmargintraders.com&type=ws&sni=black.fullmargintraders.com#%F0%9F%87%A9%F0%9F%87%AA%20%D9%86%D9%88%D9%87%20%D9%87%DB%8C%D8%AA%D9%84%D8%B1
 vless://0cc731b9-0375-4590-aeaa-7e2611a149fe@104.21.36.57:443?path=/wsv/0cc731b9-0375-4590-aeaa-7e2611a149fe&security=tls&encryption=none&host=black.fullmargintraders.com&fp=chrome&type=ws&sni=black.fullmargintraders.com#
@@ -206,7 +206,7 @@ vless://0cd02a20-80c8-43c4-ae2f-b72488549ef9@51.89.137.87:40716?mode=gun&securit
 vless://0cd25ad8-8b62-4943-9bab-96941b1d9401@188.211.233.228:443?encryption=none&amp;flow=xtls-rprx-vision&amp;security=reality&amp;sni=musicboss.eu&amp;fp=firefox&amp;pbk=QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I&amp;sid=197e9c7abe&amp;type=tcp&amp;headerType=none#
 vless://0cd25ad8-8b62-4943-9bab-96941b1d9401@188.211.233.228:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=musicboss.eu&fp=firefox&pbk=QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I&sid=197e9c7abe&type=tcp&headerType=none#
 vless://0cd25ad8-8b62-4943-9bab-96941b1d9401@188.211.233.228:443?security=reality&amp;encryption=none&amp;pbk=QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I&amp;headerType=none&amp;fp=firefox&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=musicboss.eu&amp;sid=197e9c7abe#%40filembad
-vless://0cd25ad8-8b62-4943-9bab-96941b1d9401@188.211.233.228:443?security=reality&encryption=none&pbk=QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=musicboss.eu&sid=197e9c7abe#Global 🌐 | @Raydikalx | 1471
+vless://0cd25ad8-8b62-4943-9bab-96941b1d9401@188.211.233.228:443?security=reality&encryption=none&pbk=QQZQVGy8uV4JSgPJ6a8jA56bptsSifntKDJjhSvOl2I&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=musicboss.eu&sid=197e9c7abe#Global 🌐 | @Raydikalx | 1448
 vless://0cd276a5-4501-413a-acf8-b51c54894f02@179.61.219.170:22934/?type=tcp&encryption=none#
 vless://0cd276a5-4501-413a-acf8-b51c54894f02@179.61.219.170:22934/?type=tcp&encryption=none&flow=#
 vless://0cd276a5-4501-413a-acf8-b51c54894f02@179.61.219.170:22934?flow=&type=tcp#
@@ -307,7 +307,7 @@ vless://0d0782a3-2c62-4936-b893-5790188778ea@ipw.gfdv54cvghhgfhgj-njhgj64.info:4
 vless://0d0782a3-2c62-4936-b893-5790188778ea@ipw.gfdv54cvghhgfhgj-njhgj64.info:443?path=%2F&security=tls&encryption=none&host=smrtwtsm.confappha.com&type=ws&sni=smrtwtsm.confappha.com#
 vless://0d0782a3-2c62-4936-b893-5790188778ea@ipw.gfdv54cvghhgfhgj-njhgj64.info:443?path=%2F&security=tls&encryption=none&type=ws&sni=smart.confappha.com#
 vless://0d083787-080d-4eaa-a741-e78c8fcd9547@zmaoz.faculty.ucdavis.edu:80?encryption=none&security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D1024#
-vless://0d0af68e-89ed-40d0-bfd0-bcf059b90e81@45.195.2.136:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=storage.yandex.net&security=reality&pbk=8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc&sid=d037f6f67cc90016#Global 🌐 | @Raydikalx | 1473
+vless://0d0af68e-89ed-40d0-bfd0-bcf059b90e81@45.195.2.136:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=storage.yandex.net&security=reality&pbk=8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc&sid=d037f6f67cc90016#Global 🌐 | @Raydikalx | 1450
 vless://0d0af68e-89ed-40d0-bfd0-bcf059b90e81@45.195.2.136:8443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=storage.yandex.net&pbk=8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc&sid=d037f6f67cc90016&fp=firefox#
 vless://0d0af68e-89ed-40d0-bfd0-bcf059b90e81@45.195.2.136:8443?type=raw&amp;security=reality&amp;flow=xtls-rprx-vision&amp;sni=storage.yandex.net&amp;fp=firefox&amp;pbk=8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc&amp;sid=d037f6f67cc90016#F0rc3RunVPN
 vless://0d0b3fe7-cd79-4ff4-a760-aa6e5357ab41@172.67.175.86:443?path=%2Fpa&security=tls&encryption=none&insecure=0&host=hs-495e987f.ndkwiut2718.ir&fp=chrome&type=ws&allowInsecure=0&sni=ndkwiut2718.ir#

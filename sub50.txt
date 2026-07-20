@@ -136,7 +136,7 @@ vless://1ce8104f-63ed-4a1f-9847-6dfd20640349@5.shecanmarket.com:8443?security=no
 vless://1ce8c07c-1531-4d40-a776-e989580fbd40@188.121.118.76:803?path=%2F&security=none&encryption=none&type=ws#
 vless://1ce9392f-caf4-48f7-bbb9-475b101fbde0@188.114.97.6:443?encryption=none&type=ws&security=tls&path=%2Fid-tksi&host=graph.instagram.com.cyylr.eu.cc&sni=graph.instagram.com.cyylr.eu.cc&allowInsecure=0#
 vless://1ce9392f-caf4-48f7-bbb9-475b101fbde0@188.114.97.6:443?path=%2Fid-tksi&security=tls&encryption=none&host=graph.instagram.com.cyylr.eu.cc&type=ws&sni=graph.instagram.com.cyylr.eu.cc#
-vless://1ce9392f-caf4-48f7-bbb9-475b101fbde0@188.114.97.6:443?path=/id-tksi&security=tls&encryption=none&insecure=0&host=graph.instagram.com.cyylr.eu.cc&type=ws&allowInsecure=0&sni=graph.instagram.com.cyylr.eu.cc#Global 🌐 | @Raydikalx | 1565
+vless://1ce9392f-caf4-48f7-bbb9-475b101fbde0@188.114.97.6:443?path=/id-tksi&security=tls&encryption=none&insecure=0&host=graph.instagram.com.cyylr.eu.cc&type=ws&allowInsecure=0&sni=graph.instagram.com.cyylr.eu.cc#Global 🌐 | @Raydikalx | 1543
 vless://1ce9392f-caf4-48f7-bbb9-475b101fbde0@188.114.97.6:443?security=tls&allowInsecure=0&encryption=none&type=ws&host=graph.instagram.com.cyylr.eu.cc&path=/id-tksi&sni=graph.instagram.com.cyylr.eu.cc&fp=chrome#
 vless://1cea4b92-aec1-48e2-bb8b-5aaee5fc5d01@www.parsvds.ir:80?path=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER&security=none&encryption=none&host=yechizejadid.bklink.iR.&type=httpupgrade#
 vless://1cec030a-22aa-4338-a9d2-18cb06c2b8ea@tnl39.vipradvin.ir:8220?encryption=none&security=none&type=tcp&headerType=http#
@@ -242,7 +242,7 @@ vless://1d16c6e0-1bbe-435b-b661-90043fee999c@198.71.189.123:443?encryption=none&
 vless://1d16c6e0-1bbe-435b-b661-90043fee999c@199.181.197.123:443?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=notls.lukongtou.eu.org&path=Telegram-WangCai2#
 vless://1d16c6e0-1bbe-435b-b661-90043fee999c@199.68.156.123:443?encryption=none&security=tls&sni=notls.lukongtou.eu.org&insecure=0&allowInsecure=0&type=ws&host=notls.lukongtou.eu.org&path=Telegram-WangCai2#
 vless://1d16c6e0-1bbe-435b-b661-90043fee999c@210.203.195.52:33890?encryption=none&security=tls&sni=notls.lukongtou.eu.org&insecure=0&allowInsecure=0&type=ws&host=notls.lukongtou.eu.org&path=Telegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3#
-vless://1d16c6e0-1bbe-435b-b661-90043fee999c@210.203.195.52:33890?security=tls&type=ws&path=%2FTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3&host=notls.lukongtou.eu.org&packetEncoding=xudp&sni=notls.lukongtou.eu.org&fp=chrome&encryption=none#JP 🇯🇵 | @Raydikalx | 3016
+vless://1d16c6e0-1bbe-435b-b661-90043fee999c@210.203.195.52:33890?security=tls&type=ws&path=%2FTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3&host=notls.lukongtou.eu.org&packetEncoding=xudp&sni=notls.lukongtou.eu.org&fp=chrome&encryption=none#JP 🇯🇵 | @Raydikalx | 2994
 vless://1d16c6e0-1bbe-435b-b661-90043fee999c@210.203.195.52:33890?security=tls&type=ws&path=/Telegram-WangCai2&host=notls.lukongtou.eu.org&packetEncoding=xudp&sni=notls.lukongtou.eu.org&fp=chrome&encryption=none#
 vless://1d16c6e0-1bbe-435b-b661-90043fee999c@216.205.52.123:443?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=notls.lukongtou.eu.org&path=Telegram-WangCai2&security=tls&sni=notls.lukongtou.eu.org&type=ws#
 vless://1d16c6e0-1bbe-435b-b661-90043fee999c@4.216.102.153:38765?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=notls.lukongtou.eu.org&path=Telegram-WangCai2#
@@ -350,7 +350,7 @@ vless://1d399c5a-1c32-4fff-a4d0-d78fd3328a4c@162.159.152.133:443?security=tls&sn
 vless://1d399c5a-1c32-4fff-a4d0-d78fd3328a4c@162.159.152.133:443?security=tls&sni=pages.teasalo.cloudns.org&type=ws&host=pages.teasalo.cloudns.org&path=%2FTelegram-%40V2ray_Alpha%2F%3Fed%3D2560&fp=random&alpn=h3#
 vless://1d399c5a-1c32-4fff-a4d0-d78fd3328a4c@162.159.152.133:443?security=tls&sni=pages.teasalo.cloudns.org&type=ws&host=pages.teasalo.cloudns.org&path=/Telegram-@V2ray_Alpha/?ed=2560&fp=chrome&alpn=h3#
 vless://1d399c5a-1c32-4fff-a4d0-d78fd3328a4c@162.159.152.133:443?security=tls&sni=pages.teasalo.cloudns.org&type=ws&host=pages.teasalo.cloudns.org&path=/Telegram-@VPNine1/?ed=2560&fp=chrome&alpn=h3#
-vless://1d399c5a-1c32-4fff-a4d0-d78fd3328a4c@162.159.152.138:443?security=tls&sni=pages.teasalo.cloudns.org&type=ws&host=pages.teasalo.cloudns.org&fp=chrome&alpn=h3#US 🇺🇸 | @Raydikalx | 1566
+vless://1d399c5a-1c32-4fff-a4d0-d78fd3328a4c@162.159.152.138:443?security=tls&sni=pages.teasalo.cloudns.org&type=ws&host=pages.teasalo.cloudns.org&fp=chrome&alpn=h3#US 🇺🇸 | @Raydikalx | 1544
 vless://1d399c5a-1c32-4fff-a4d0-d78fd3328a4c@162.159.152.138:443?security=tls&sni=pages.teasalo.cloudns.org&type=ws&host=pages.teasalo.cloudns.org&fp=random&alpn=h3#
 vless://1d399c5a-1c32-4fff-a4d0-d78fd3328a4c@162.159.152.138:443?security=tls&sni=pages.teasalo.cloudns.org&type=ws&host=pages.teasalo.cloudns.org&path=%2FTelegram-%40V2ray_Alpha%2F%3Fed%3D2560&fp=random&alpn=h3#
 vless://1d399c5a-1c32-4fff-a4d0-d78fd3328a4c@162.159.152.138:443?security=tls&sni=pages.teasalo.cloudns.org&type=ws&host=pages.teasalo.cloudns.org&path=/Telegram-@V2ray_Alpha/?ed=2560&fp=chrome&alpn=h3#

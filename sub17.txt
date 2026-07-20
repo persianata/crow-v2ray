@@ -395,7 +395,7 @@ vless://00784feb-0d55-42ca-8871-aa39cccf1a66@185.143.233.5:443?path=%2Fchat%3Fed
 vless://0078ca67-afc3-476f-9447-b991fc657a36@visa.com:8443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=telegram-falcunargo-ch.falcunar.uk.eu.org&fp=random&type=ws&sni=telegram-falcunargo-ch.falcunar.uk.eu.org#
 vless://0078d912-bca4-4898-a414-2514233c008a@ger.4uvpn1.us:52361?security=&encryption=none&host=zula.ir%2C%20parspack.com%2C%20refersion.com&headerType=http&type=tcp#
 vless://0078d912-bca4-4898-a414-2514233c008a@ger.4uvpn1.us:52361?security=none&encryption=none&host=zula.ir%2C%20parspack.com%2C%20refersion.com&headerType=http&type=tcp#
-vless://007a5c24-cdbe-4adc-a79f-ca2768fef8bb@edge.aiteamplus.ir:10007?security=none&encryption=none&headerType=http&type=tcp#Global 🌐 | @Raydikalx | 1403
+vless://007a5c24-cdbe-4adc-a79f-ca2768fef8bb@edge.aiteamplus.ir:10007?security=none&encryption=none&headerType=http&type=tcp#Global 🌐 | @Raydikalx | 1379
 vless://007a5c24-cdbe-4adc-a79f-ca2768fef8bb@edge.aiteamplus.ir:10008?mode=auto&path=%2Fapi&security=none&encryption=none&host=play.google.com&type=xhttp#
 vless://007a5c24-cdbe-4adc-a79f-ca2768fef8bb@metrix.taklady.com:47041?security=none&encryption=none&host=gharar.ir&headerType=http&type=tcp#
 vless://007a5c24-cdbe-4adc-a79f-ca2768fef8bb@metrix.taklady.com:47042?encryption=none&security=none&type=tcp&headerType=http&host=gharar.ir#
