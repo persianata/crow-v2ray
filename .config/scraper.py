@@ -1,11 +1,11 @@
 import requests
 import os
 
-# خواندن اطلاعات از Secrets گیت‌هاب
+# خواندن اطلاعات از Secrets
 BALE_TOKEN = os.environ.get("BALE_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
 
-# لیست منابع (مطابق با آنچه قبلا داشتید)
+# لیست کامل منابع شما
 SOURCES = [
     "https://raw.githubusercontent.com/3nerg0n/vless-parser/refs/heads/main/sub_vless_3nerg0n_92sh81",
     "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/mix.txt",
@@ -33,23 +33,24 @@ SOURCES = [
     "https://raw.githubusercontent.com/barry-far/v2ray-config/main/v2ray.txt"
 ]
 
-def send_to_bale(message):
+def send_to_bale_with_file(file_path, caption):
     if BALE_TOKEN and CHAT_ID:
-        url = f"https://tapi.bale.ai/bot{BALE_TOKEN}/sendMessage"
+        url = f"https://tapi.bale.ai/bot{BALE_TOKEN}/sendDocument"
         try:
-            requests.post(url, data={"chat_id": CHAT_ID, "text": message}, timeout=10)
-        except:
-            pass
+            with open(file_path, 'rb') as f:
+                requests.post(url, data={"chat_id": CHAT_ID, "caption": caption}, files={"document": f}, timeout=60)
+        except Exception as e:
+            print(f"Error sending file: {e}")
 
 def get_all_configs():
     unique_configs = {}
     for url in SOURCES:
         try:
-            response = requests.get(url, timeout=10)
+            response = requests.get(url, timeout=15)
             if response.status_code == 200:
                 for line in response.text.splitlines():
                     clean_line = line.strip()
-                    if len(clean_line) > 20 and "test" not in clean_line.lower():
+                    if len(clean_line) > 20:
                         base_config = clean_line.split('#')[0]
                         unique_configs[base_config] = clean_line
         except:
@@ -57,12 +58,17 @@ def get_all_configs():
     return list(unique_configs.values())
 
 if __name__ == "__main__":
-    configs = get_all_configs()
-    BATCH_SIZE = 500
-    for i in range(50):
-        batch = configs[i*BATCH_SIZE : (i+1)*BATCH_SIZE]
-        if not batch: break
-        with open(f"sub{i+1}.txt", "w", encoding="utf-8") as f:
-            f.write("\n".join(batch))
-            
-    send_to_bale(f"✅ بروزرسانی انجام شد.\nتعداد کل کانفیگ‌ها: {len(configs)}")
+    all_configs = get_all_configs()
+    
+    # ذخیره فایل کامل برای مخزن
+    full_file = "all_configs.txt"
+    with open(full_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(all_configs))
+        
+    # ارسال فقط ۱۰۰ تای اول به بله برای راحتی در استفاده
+    limited_file = "top_configs.txt"
+    with open(limited_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(all_configs[:100]))
+    
+    msg = f"✅ ۱۰۰ کانفیگ منتخب ارسال شد.\nتعداد کل کانفیگ‌های جمع‌آوری شده: {len(all_configs)}"
+    send_to_bale_with_file(limited_file, msg)
