@@ -1,7 +1,6 @@
 import requests
 import os
 
-# لیست کامل منابع شما
 SOURCES = [
     "https://raw.githubusercontent.com/3nerg0n/vless-parser/refs/heads/main/sub_vless_3nerg0n_92sh81",
     "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/mix.txt",
@@ -30,43 +29,41 @@ SOURCES = [
 ]
 
 def is_valid_config(config):
-    # حذف کانفیگ‌های کوتاه (معمولاً خراب هستند)
-    if len(config) < 20:
+    # فیلتر سخت‌گیرانه برای حذف آشغال‌ها و فایل‌های HTML
+    valid_prefixes = ("vless://", "vmess://", "trojan://", "ss://", "socks://")
+    if not config.startswith(valid_prefixes):
         return False
-    # حذف کلمات مشکوک یا تست
-    forbidden = ["test", "example", "n/a"]
-    if any(word in config.lower() for word in forbidden):
+    # طول کانفیگ نباید بیش از حد کوتاه یا بلند باشد (حذف فایل‌های غیرمعتبر)
+    if len(config) < 20 or len(config) > 800:
         return False
     return True
 
 def get_all_configs():
-    all_lines = []
+    all_lines = set()
     for url in SOURCES:
         try:
-            response = requests.get(url, timeout=15)
+            response = requests.get(url, timeout=10)
             if response.status_code == 200:
-                lines = response.text.splitlines()
-                # فقط کانفیگ‌های معتبر فیلتر شده اضافه می‌شوند
-                for line in lines:
-                    if line.strip() and is_valid_config(line):
-                        all_lines.append(line)
+                for line in response.text.splitlines():
+                    clean_line = line.strip()
+                    if is_valid_config(clean_line):
+                        all_lines.add(clean_line)
         except:
             continue
-    return list(set(all_lines))
+    return list(all_lines)
 
 if __name__ == "__main__":
     configs = get_all_configs()
-    MAX_FILES = 50
-    BATCH_SIZE = 500
+    # محدود کردن کل خروجی به ۱۰۰۰ عدد برای کاهش شدید حجم
+    configs = configs[:1000]
 
-    if os.path.exists("all_servers.txt"): os.remove("all_servers.txt")
-    for i in range(MAX_FILES):
-        if os.path.exists(f"sub{i+1}.txt"): os.remove(f"sub{i+1}.txt")
-    
+    # نوشتن فایل all_servers.txt
     with open("all_servers.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(configs))
         
-    for i in range(MAX_FILES):
+    # نوشتن فایل‌های sub
+    BATCH_SIZE = 50
+    for i in range(20): # 20 فایل 50 تایی می‌شود 1000 تا
         batch = configs[i*BATCH_SIZE : (i+1)*BATCH_SIZE]
         if not batch: break
         with open(f"sub{i+1}.txt", "w", encoding="utf-8") as f:
