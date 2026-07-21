@@ -45,7 +45,6 @@ def fetch_and_split_configs():
             print(f"Fetching: {url}")
             res = requests.get(url, timeout=15)
             if res.status_code == 200:
-                # خط به خط جدا می‌کنیم تا خطوط خالی اضافی ایجاد نشود
                 lines = res.text.splitlines()
                 for line in lines:
                     if line.strip():
@@ -81,7 +80,7 @@ def fetch_and_split_configs():
     with open("sub3.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(part3))
 
-    print("Configs successfully fetched and split into sub1.txt, sub2.txt, sub3.txt and all_configs.txt")
+    print("Configs successfully fetched and split.")
 
 def send_to_bale(file_path, caption):
     if not BALE_TOKEN or not BALE_CHAT_ID:
@@ -95,7 +94,7 @@ def send_to_bale(file_path, caption):
                 files={"document": f},
                 timeout=60,
             )
-            print(f"Bale: {res.status_code}")
+            print(f"Bale ({file_path}): {res.status_code}")
     except Exception as e:
         print(f"Bale error: {e}")
 
@@ -111,7 +110,7 @@ def send_to_telegram(file_path, caption):
                 files={"document": f},
                 timeout=60,
             )
-            print(f"Telegram: {res.status_code}")
+            print(f"Telegram ({file_path}): {res.status_code}")
     except Exception as e:
         print(f"Telegram error: {e}")
 
@@ -120,7 +119,7 @@ def main():
     
     caption_base = "🚀 Latest V2Ray Configs\n📌 Update: Automated Crow-V2Ray"
     
-    # لیستی از فایل‌هایی که می‌خواهید ارسال شوند
+    # لیست فایل‌هایی که باید ارسال شوند
     files_to_send = [
         ("all_configs.txt", f"{caption_base}\n📁 All Configs"),
         ("sub1.txt", f"{caption_base}\n📁 Subscription Part 1"),
@@ -128,9 +127,12 @@ def main():
         ("sub3.txt", f"{caption_base}\n📁 Subscription Part 3")
     ]
     
-    # ارسال تک تک فایل‌ها به بله و تلگرام
+    # ارسال فایل‌ها به بله و تلگرام
     for file_path, caption in files_to_send:
         if os.path.exists(file_path):
             print(f"Sending {file_path} to platforms...")
             send_to_bale(file_path, caption)
             send_to_telegram(file_path, caption)
+
+if __name__ == "__main__":
+    main()
