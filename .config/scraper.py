@@ -8,14 +8,37 @@ BALE_CHAT_ID = os.getenv("CHAT_ID")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-# لیست لینک‌ها، مخزن‌ها یا سورس‌های خام کانفیگ (می‌توانید لینک فایل‌های sub.txt دلخواه خود را اینجا اضافه کنید)
+# لیست کامل مخزن‌ها و منابع کانفیگ
 SOURCES = [
-    # "https://raw.githubusercontent.com/username/repository/main/sub.txt",
+    "https://raw.githubusercontent.com/3nerg0n/vless-parser/refs/heads/main/sub_vless_3nerg0n_92sh81",
+    "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/mix.txt",
+    "https://raw.githubusercontent.com/zxcursedzxc0721/vless-subscriptions/refs/heads/main/all/vless.txt",
+    "https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/refs/heads/main/all_servers.txt",
+    "https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/refs/heads/main/output/converted.txt",
+    "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/main/main/mix.txt",
+    "https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/V2RAY_SUB/main/v2ray.txt",
+    "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
+    "https://raw.githubusercontent.com/MrRabbitson/RabbitProxyz-proxy-list/main/proxy-list.txt",
+    "https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/main/config.txt",
+    "https://raw.githubusercontent.com/MohammadBahemmat/V2Ray-Collector/main/sub/sub.txt",
+    "https://raw.githubusercontent.com/mohamadfg-dev/telegram-v2ray-configs-collector/main/v2ray.txt",
+    "https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/v2ray.txt",
+    "https://raw.githubusercontent.com/yebekhe/V2RayConfig/main/v2ray.txt",
+    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/E5%2Fsub.txt",
+    "https://raw.githubusercontent.com/freefq/free/master/v2",
+    "https://raw.githubusercontent.com/aliilapro/v2rayNG-Config/main/server.txt",
+    "https://raw.githubusercontent.com/Anankke/Sub-Store/master/config/node.txt",
+    "https://raw.githubusercontent.com/tbbatbb/V2Ray/master/v2ray.txt",
+    "https://raw.githubusercontent.com/VP01596/vless-top15/main/vless.txt",
+    "https://raw.githubusercontent.com/lm705/vair/main/vair.txt",
+    "https://raw.githubusercontent.com/Alirewa/V2ray-Configs/main/v2ray.txt",
+    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/v2ray.txt",
+    "https://raw.githubusercontent.com/barry-far/v2ray-config/main/v2ray.txt"
 ]
 
 
-def fetch_configs(output_file="sub"):
-    """جمع‌آوری کانفیگ‌ها از لیست مخزن‌ها و منابع مختلف و ذخیره در فایل خروجی"""
+def fetch_from_sources(output_file="sub"):
+    """جمع‌آوری اطلاعات از مخزن‌ها و منابع مختلف و ذخیره در فایل خروجی"""
     all_configs = []
     
     for url in SOURCES:
@@ -27,13 +50,10 @@ def fetch_configs(output_file="sub"):
         except Exception as e:
             print(f"Error fetching from {url}: {e}")
 
-    # اگر سورس‌ها کانفیگی برگرداندند، آن‌ها را در فایل ذخیره می‌کنیم
-    # (اگر اسکریپت شما خودش در بخش دیگری فایل sub را تولید می‌کند، این بخش به فایل موجود اضافه یا بازنویسی می‌کند)
+    # اگر از منابع چیزی دریافت شد، در فایل خروجی نوشته شود
     if all_configs:
         with open(output_file, "w", encoding="utf-8") as f:
             f.write("\n".join(all_configs))
-            
-    return output_file
 
 
 def send_to_bale(file_path, caption):
@@ -63,7 +83,6 @@ def send_to_telegram(file_path, caption):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendDocument"
     try:
         with open(file_path, "rb") as f:
-            response.requests_post = requests.post
             response = requests.post(
                 url,
                 data={"chat_id": TELEGRAM_CHAT_ID, "caption": caption},
@@ -76,20 +95,22 @@ def send_to_telegram(file_path, caption):
 
 
 def main():
-    # نام فایل خروجی کانفیگ‌ها (می‌توانید به sub یا sub.txt تغییر دهید)
-    file_path = "sub"
+    # نام فایل خروجی
+    file_path = "sub" 
     
-    # اول سورس‌ها و مخزن‌ها را بررسی/فچ می‌کنیم (یا اگر فایل از قبل توسط بخش دیگری ساخته شده باشد بررسی می‌شود)
-    fetch_configs(file_path)
-    
-    # اگر فایل نام دیگری مثل sub.txt داشت و فایل اصلی پیدا نشد، بررسی ثانویه
-    if not os.path.exists(file_path) and os.path.exists("sub.txt"):
+    # ابتدا کانفیگ‌ها از تمام مخزن‌های لیست بالا فچ و در فایل ذخیره می‌شوند
+    fetch_from_sources(file_path)
+
+    # بررسی و هندل کردن خطای پیدا نکردن فایل در صورت داشتن پسوند یا نام دیگر
+    if not os.path.exists(file_path) and os.path.exists("configs.txt"):
+        file_path = "configs.txt"
+    elif not os.path.exists(file_path) and os.path.exists("sub.txt"):
         file_path = "sub.txt"
 
     caption = "🚀 Latest V2Ray Configs\n📌 Update: Automated Crow-V2Ray"
 
     if os.path.exists(file_path):
-        print(f"Sending configurations from '{file_path}' to platforms...")
+        print(f"File '{file_path}' found. Sending configurations to platforms...")
         
         # ارسال به بله
         send_to_bale(file_path, caption)
