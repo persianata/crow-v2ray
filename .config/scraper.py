@@ -118,13 +118,19 @@ def send_to_telegram(file_path, caption):
 def main():
     fetch_and_split_configs()
     
-    caption = "🚀 Latest V2Ray Configs\n📌 Update: Automated Crow-V2Ray"
+    caption_base = "🚀 Latest V2Ray Configs\n📌 Update: Automated Crow-V2Ray"
     
-    # ارسال فایل اصلی یا یکی از زیرمجموعه‌ها به پیام‌رسان‌ها (مثلاً all_configs.txt)
-    target_file = "all_configs.txt"
-    if os.path.exists(target_file):
-        send_to_bale(target_file, caption)
-        send_to_telegram(target_file, caption)
-
-if __name__ == "__main__":
-    main()
+    # لیستی از فایل‌هایی که می‌خواهید ارسال شوند
+    files_to_send = [
+        ("all_configs.txt", f"{caption_base}\n📁 All Configs"),
+        ("sub1.txt", f"{caption_base}\n📁 Subscription Part 1"),
+        ("sub2.txt", f"{caption_base}\n📁 Subscription Part 2"),
+        ("sub3.txt", f"{caption_base}\n📁 Subscription Part 3")
+    ]
+    
+    # ارسال تک تک فایل‌ها به بله و تلگرام
+    for file_path, caption in files_to_send:
+        if os.path.exists(file_path):
+            print(f"Sending {file_path} to platforms...")
+            send_to_bale(file_path, caption)
+            send_to_telegram(file_path, caption)
