@@ -36,24 +36,55 @@ SOURCES = [
     "https://raw.githubusercontent.com/barry-far/v2ray-config/main/v2ray.txt"
 ]
 
-def fetch_and_save(output_file="all_configs.txt"):
-    all_configs = []
+def fetch_and_split_configs():
+    all_lines = []
+    
+    # دریافت داده‌ها از تمام منابع
     for url in SOURCES:
         try:
             print(f"Fetching: {url}")
             res = requests.get(url, timeout=15)
             if res.status_code == 200:
-                all_configs.append(res.text)
+                # خط به خط جدا می‌کنیم تا خطوط خالی اضافی ایجاد نشود
+                lines = res.text.splitlines()
+                for line in lines:
+                    if line.strip():
+                        all_lines.append(line.strip())
         except Exception as e:
             print(f"Error fetching {url}: {e}")
 
-    if all_configs:
-        with open(output_file, "w", encoding="utf-8") as f:
-            f.write("\n".join(all_configs))
+    if not all_lines:
+        print("No configs fetched!")
+        return
+
+    # ذخیره کل کانفیگ‌ها در all_configs.txt
+    with open("all_configs.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(all_lines))
+
+    # تقسیم لیست کانفیگ‌ها به ۳ قسمت مساوی برای sub1, sub2, sub3
+    chunk_size = len(all_lines) // 3
+    remainder = len(all_lines) % 3
+
+    sub1_end = chunk_size + (1 if remainder > 0 else 0)
+    sub2_end = sub1_end + chunk_size + (1 if remainder > 1 else 0)
+
+    part1 = all_lines[:sub1_end]
+    part2 = all_lines[sub1_end:sub2_end]
+    part3 = all_lines[sub2_end:]
+
+    with open("sub1.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(part1))
+    
+    with open("sub2.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(part2))
+
+    with open("sub3.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(part3))
+
+    print("Configs successfully fetched and split into sub1.txt, sub2.txt, sub3.txt and all_configs.txt")
 
 def send_to_bale(file_path, caption):
     if not BALE_TOKEN or not BALE_CHAT_ID:
-        print("Bale credentials missing.")
         return
     url = f"https://tapi.bale.ai/bot{BALE_TOKEN}/sendDocument"
     try:
@@ -64,13 +95,12 @@ def send_to_bale(file_path, caption):
                 files={"document": f},
                 timeout=60,
             )
-            print(f"Bale: {res.status_code} - {res.text}")
+            print(f"Bale: {res.status_code}")
     except Exception as e:
         print(f"Bale error: {e}")
 
 def send_to_telegram(file_path, caption):
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
-        print("Telegram credentials missing.")
         return
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendDocument"
     try:
@@ -81,22 +111,20 @@ def send_to_telegram(file_path, caption):
                 files={"document": f},
                 timeout=60,
             )
-            print(f"Telegram: {res.status_code} - {res.text}")
+            print(f"Telegram: {res.status_code}")
     except Exception as e:
         print(f"Telegram error: {e}")
 
 def main():
-    file_path = "all_configs.txt"
-    fetch_and_save(file_path)
+    fetch_and_split_configs()
     
     caption = "🚀 Latest V2Ray Configs\n📌 Update: Automated Crow-V2Ray"
-
-    if os.path.exists(file_path):
-        print(f"File {file_path} ready. Sending...")
-        send_to_bale(file_path, caption)
-        send_to_telegram(file_path, caption)
-    else:
-        print("Config file not found!")
+    
+    # ارسال فایل اصلی یا یکی از زیرمجموعه‌ها به پیام‌رسان‌ها (مثلاً all_configs.txt)
+    target_file = "all_configs.txt"
+    if os.path.exists(target_file):
+        send_to_bale(target_file, caption)
+        send_to_telegram(target_file, caption)
 
 if __name__ == "__main__":
     main()
