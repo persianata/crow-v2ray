@@ -3,11 +3,15 @@ import os
 import time
 import random
 
-# دریافت توکن و آیدی از Secretهای گیت‌هاب
+# دریافت اطلاعات بله از Secretها
 BALE_TOKEN = os.environ.get("BALE_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
 
-# لیست کامل سورس‌های شما
+# دریافت اطلاعات تلگرام از Secretها
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+
+# لیست کامل سورس‌ها
 SOURCES = [
     "https://raw.githubusercontent.com/3nerg0n/vless-parser/refs/heads/main/sub_vless_3nerg0n_92sh81",
     "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/mix.txt",
@@ -41,7 +45,6 @@ def get_all_configs():
         try:
             response = requests.get(url, timeout=10)
             if response.status_code == 200:
-                # استفاده از strip برای تمیز کردن لینک‌ها و حذف خطوط خالی
                 lines = [line.strip() for line in response.text.splitlines() if line.strip()]
                 all_configs.update(lines)
         except:
@@ -57,10 +60,18 @@ def send_to_bale(file_path, caption):
         except:
             pass
 
+def send_to_telegram(file_path, caption):
+    if TELEGRAM_TOKEN and TELEGRAM_CHAT_ID:
+        url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendDocument"
+        try:
+            with open(file_path, 'rb') as f:
+                requests.post(url, data={"chat_id": TELEGRAM_CHAT_ID, "caption": caption}, files={"document": f}, timeout=60)
+        except:
+            pass
+
 if __name__ == "__main__":
     all_configs = get_all_configs()
     
-    # ذخیره فایل مرجع
     with open("all_configs.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(all_configs))
         
@@ -75,7 +86,12 @@ if __name__ == "__main__":
             with open(sub, "w", encoding="utf-8") as f:
                 f.write("\n".join(subset))
             
-            send_to_bale(sub, f"✅ فایل {sub} با {len(subset)} کانفیگ جدید")
+            caption = f"✅ فایل {sub} با {len(subset)} کانفیگ جدید"
+            
+            # ارسال هم‌زمان به بله و تلگرام
+            send_to_bale(sub, caption)
+            send_to_telegram(sub, caption)
+            
             time.sleep(5)
         else:
             break
